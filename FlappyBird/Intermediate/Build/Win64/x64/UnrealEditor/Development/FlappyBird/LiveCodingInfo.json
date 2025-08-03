@@ -1,5 +1,9 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.FlappyBird.gen.cpp.obj": [
+			"BirdCharacter.gen.cpp.obj",
+			"FlappyBird.init.gen.cpp.obj"
+		]
 	}
 }
