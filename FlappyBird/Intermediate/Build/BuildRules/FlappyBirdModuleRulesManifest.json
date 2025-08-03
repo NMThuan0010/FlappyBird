@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Echoflux Studio\\UE 5\\Project\\FlappyBirdGame\\FlappyBird\\FlappyBird\\Source\\FlappyBird\\FlappyBird.Build.cs",
+		"D:\\Echoflux Studio\\UE 5\\Project\\FlappyBirdGame\\FlappyBird\\FlappyBird\\Source\\FlappyBird.Target.cs",
+		"D:\\Echoflux Studio\\UE 5\\Project\\FlappyBirdGame\\FlappyBird\\FlappyBird\\Source\\FlappyBirdEditor.Target.cs"
+	],
+	"EngineVersion": "5.6.0"
+}

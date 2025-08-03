@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\echoflux studio\\ue 5\\project\\flappybirdgame\\flappybird\\flappybird\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\flappybird\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\echoflux studio\\ue 5\\project\\flappybirdgame\\flappybird\\flappybird\\intermediate\\build\\win64\\x64\\flappybirdeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\echoflux studio\\ue 5\\project\\flappybirdgame\\flappybird\\flappybird\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\flappybird\\definitions.flappybird.h",
+            "e:\\studio\\unreal 5\\folder\\ue_5.6\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
