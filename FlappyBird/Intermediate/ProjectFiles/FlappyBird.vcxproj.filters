@@ -11,6 +11,7 @@
     <None Include="..\..\Source\FlappyBirdEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -29,6 +30,12 @@
     <Filter Include="Source\FlappyBird">
       <UniqueIdentifier>{C803BB25-C563-3F96-8260-0A4F5F0AE628}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\FlappyBird\BirdCharacter.cpp">
+      <Filter>Source\FlappyBird</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FlappyBird\BirdCharacter.h">
+      <Filter>Source\FlappyBird</Filter>
+    </ClInclude>
     <None Include="..\..\Source\FlappyBird\FlappyBird.Build.cs">
       <Filter>Source\FlappyBird</Filter>
     </None>
