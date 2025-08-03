@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-FlappyBird-0001.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:/Echoflux Studio/UE 5/Project/FlappyBirdGame/FlappyBird/FlappyBird/Intermediate/Build/Win64/x64/FlappyBirdEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"D:/Echoflux Studio/UE 5/Project/FlappyBirdGame/FlappyBird/FlappyBird/Intermediate/Build/Win64/x64/UnrealEditor/Development/FlappyBird/Module.FlappyBird.gen.cpp.obj"
+"D:/Echoflux Studio/UE 5/Project/FlappyBirdGame/FlappyBird/FlappyBird/Intermediate/Build/Win64/x64/UnrealEditor/Development/FlappyBird/BirdCharacter.cpp.obj"
+"D:/Echoflux Studio/UE 5/Project/FlappyBirdGame/FlappyBird/FlappyBird/Intermediate/Build/Win64/x64/UnrealEditor/Development/FlappyBird/FlappyBird.cpp.obj"
+"D:/Echoflux Studio/UE 5/Project/FlappyBirdGame/FlappyBird/FlappyBird/Intermediate/Build/Win64/x64/UnrealEditor/Development/FlappyBird/PerModuleInline.gen.cpp.obj"
+"D:/Echoflux Studio/UE 5/Project/FlappyBirdGame/FlappyBird/FlappyBird/Intermediate/Build/Win64/x64/UnrealEditor/Development/FlappyBird/Default.rc2.res"
+/OUT:"D:/Echoflux Studio/UE 5/Project/FlappyBirdGame/FlappyBird/FlappyBird/Intermediate/Build/Win64/x64/UnrealEditor/Development/FlappyBird/UnrealEditor-FlappyBird-0001.lib"
