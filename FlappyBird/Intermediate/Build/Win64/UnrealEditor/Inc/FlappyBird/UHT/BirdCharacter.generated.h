@@ -17,9 +17,13 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class ABirdCharacter ***********************************************************
+#define FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execFlap);
+
+
 FLAPPYBIRD_API UClass* Z_Construct_UClass_ABirdCharacter_NoRegister();
 
-#define FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABirdCharacter(); \
 	friend struct Z_Construct_UClass_ABirdCharacter_Statics; \
@@ -30,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ABirdCharacter)
 
 
-#define FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ABirdCharacter(ABirdCharacter&&) = delete; \
 	ABirdCharacter(const ABirdCharacter&) = delete; \
@@ -40,12 +44,13 @@ public: \
 	NO_API virtual ~ABirdCharacter();
 
 
-#define FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_9_PROLOG
-#define FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_12_GENERATED_BODY \
+#define FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_13_PROLOG
+#define FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_16_INCLASS_NO_PURE_DECLS \
+	FID_FlappyBird_Source_FlappyBird_BirdCharacter_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

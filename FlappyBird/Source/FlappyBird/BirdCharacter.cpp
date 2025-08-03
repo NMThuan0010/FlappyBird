@@ -4,6 +4,8 @@
 #include "BirdCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Components/InputComponent.h"
+#include "EnhancedInputComponent.h"
+#include "EnhancedInputSubsystems.h"
 
 // Sets default values
 ABirdCharacter::ABirdCharacter()
@@ -32,11 +34,32 @@ void ABirdCharacter::Tick(float DeltaTime)
 // Called to bind functionality to input
 void ABirdCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Flap", IE_Pressed, this, &ABirdCharacter::Flap);
+    Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+    // Cast EnhancedInputComponent
+    if (UEnhancedInputComponent* EnhancedInput = Cast<UEnhancedInputComponent>(PlayerInputComponent))
+    {
+        if (FlapAction)
+        {
+            EnhancedInput->BindAction(FlapAction, ETriggerEvent::Started, this, &ABirdCharacter::Flap);
+        }
+    }
+
+    // Add Input Mapping Context
+    if (APlayerController* PC = Cast<APlayerController>(Controller))
+    {
+        if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer()))
+        {
+            if (FlapMappingContext)
+            {
+                Subsystem->AddMappingContext(FlapMappingContext, 0);
+            }
+        }
+    }
 }
 void ABirdCharacter::Flap()
 {
-	LaunchCharacter(FVector(0, 0, JumpForce), false, true);
+    GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("Jump!"));
+    GetCharacterMovement()->Velocity.Z = 600.f;
 }
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlappyBirdModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a101f797249e7fb84216e081961df55351a8a67b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7973d114e813778c1a86e122592afde7d9b25a94")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlappyBirdModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlappyBirdModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
