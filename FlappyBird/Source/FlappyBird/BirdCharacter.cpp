@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "BirdCharacter.h"
@@ -12,7 +12,7 @@ ABirdCharacter::ABirdCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	GetCharacterMovement()->GravityScale = 2.0f;
+	GetCharacterMovement()->GravityScale = 2.0f;// khởi tạo trong lực cho bird
 	GetCharacterMovement()->AirControl = 0.8f;
 
 }
@@ -21,13 +21,16 @@ ABirdCharacter::ABirdCharacter()
 void ABirdCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
 void ABirdCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+    FVector CurrentVelocity = GetVelocity();
+    FVector NewVelocity = FVector(400.f, 0.f, CurrentVelocity.Z); // bay tới phía trước trục X
+    GetCharacterMovement()->Velocity = NewVelocity;
 
 }
 
@@ -59,7 +62,7 @@ void ABirdCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 }
 void ABirdCharacter::Flap()
 {
-    GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("Jump!"));
-    GetCharacterMovement()->Velocity.Z = 600.f;
+    GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("Jump!!!!"));
+    LaunchCharacter(FVector(0.f, 0.f, 600.f), false, true);
 }
 
